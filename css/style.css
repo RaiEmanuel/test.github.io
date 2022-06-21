@@ -1,0 +1,293 @@
+*{
+	margin: 0 !important;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none !important;
+	list-style: none;
+	color: purple;
+	font-family: 'Quicksand', sans-serif;
+	border: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+:root{
+	--primary-color: #5BE9DE;
+	--secondary-color: #256A87;
+}
+body{
+	position: relative;
+	overflow-x: hidden;
+}
+/* HEADER */
+header{
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+	position: relative;
+}
+header #menu{
+	width: 100vw;
+	height: 10vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+header #menu li a{
+	font-size: 2em;
+	color: var(--secondary-color);
+	font-weight: 700;
+}
+header #menu li a:hover{
+	background-color: var(--primary-color);
+	border-radius: 2vw;
+	padding: 1vh 1vh;
+}
+header #body{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70vh;
+}
+header #body div{
+	width: 50vw;
+	height: 100%;
+	position: relative;
+}
+header #body div:first-child{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+header #body div:first-child h1{
+	color: var(--secondary-color);
+	font-weight: 700;
+	font-size: 4em;
+}
+header #body div:first-child h2{
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: 2em;
+}
+header #body div:last-child{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header #wave{
+	display: flex;
+	justify-content: center;
+	height: 20vh;
+	background-color: var(--primary-color);
+}
+/* MAIN */
+main{
+	width: 100vw;
+	position: relative;
+}
+/* MAIN APLICATIVO */
+main #aplicativo{
+	height: 100vh;
+	position: relative;
+}
+main #aplicativo .title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+}
+main #aplicativo .title h2{
+	font-weight: 700;
+	font-size: 2.5em;
+	color: var(--secondary-color);
+}
+/* MAIN APLICATIVO CONTENT */
+main #aplicativo .content{
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+main #aplicativo .content .half-one,.half-two{
+	width: 50vw;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+main #aplicativo .content .half-one .half-one h2{
+	font-size: 3em;
+	font-weight: 700;
+	color: var(--primary-color);
+}
+main #aplicativo .content .half-one .half-one{
+	width: 50vw;
+	height: 45vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+}
+main #aplicativo .content .half-one #redes-sociais{
+	width: 50vw;
+	height: 45vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: row;
+	grid-gap: 3vw;
+	padding-top: 3vh;
+	background-color: var(--primary-color);
+
+}
+main #aplicativo .content .half-two .half-one{
+	width: 50vw;
+	height: 45vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+main #aplicativo .content .half-two .half-two{
+	width: 50vw;
+	height: 45vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary-color);
+	position: relative;
+}
+main #aplicativo .content .half-two #app{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 99;
+	height: 60%;
+	transform: translate(-50%, -50%);
+}
+/* MAIN SOBRE */
+main #sobre{
+	height: 100vh;
+	position: relative;
+}
+main #sobre .title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+}
+main #sobre .title h2{
+	font-weight: 700;
+	font-size: 2.5em;
+	color: var(--secondary-color);
+}
+main #sobre .content{
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	flex-direction: column;
+	column-gap: 20vh;
+}
+main #sobre .content h2{
+	font-weight: 700;
+	color: var(--secondary-color);
+	font-size: 3.5em;
+}
+main #sobre .content h3{
+	color: var(--primary-color);
+	font-size: 2.5em;
+}
+main #sobre .content .card{
+	width: 20vw;
+	height: 20vw;
+	background-color: var(--primary-color);
+	border-radius: 1vw;
+	border-color: transparent;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+}
+main #sobre .content .card img{
+	object-fit: contain;
+}
+/* MAIN AÇÃO */
+main #acao{
+	height: 100vh;
+	position: relative;
+}
+main #acao .title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+}
+main #acao .title h2{
+	font-weight: 700;
+	font-size: 2.5em;
+	color: var(--secondary-color);
+}
+main #acao .content{
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	flex-direction: row;
+}
+main #acao .content .half-one{
+	height: 90vh;
+	width: 70vw;
+	position: relative;
+	background-color: var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 10vw;
+	border-top-right-radius: 2vw;
+	border-bottom-right-radius: 2vw;
+}
+main #acao .content .half-one h2{
+	font-weight: 700;
+	color: white;
+	font-size: 3em;
+}
+main #acao .content .half-one div{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	grid-gap: 5vh;
+	width: 30vw;
+	height: 90vh;
+	position: relative;
+}
+main #acao .content .half-one div button{
+	padding: 1vw 2vw;
+	border-radius: 10vh;
+	background-color: var(--secondary-color);
+	color: white;
+	font-size: 2em;
+	font-weight: 700;
+}
+main #acao .content .half-one img{
+	height: 30vw;
+	width: 30vw;
+	border-radius: 1vw;
+	object-fit: cover;
+	transform: translate(50%);
+	z-index: 99;
+}
+main #acao .content .half-two{
+	height: 90vh;
+	width: 30vw;
+	position: relative;
+	background-color: white;
+}
